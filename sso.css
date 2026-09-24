@@ -1,0 +1,1812 @@
+/* =========================================================
+   YEATSHOLING RESIDENCE HALL
+   SSO PAGE
+   SCRAPBOOK / PAPER THEME
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background: #eee7db;
+
+    color: #795e4a;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 92%;
+
+    max-width: 1200px;
+
+    height: 70px;
+
+    padding: 10px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #fffdf8;
+
+    border: 2px solid #dfd1bf;
+
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 0 #d6c4ae;
+
+    z-index: 1000;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.logo > span {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ff684d;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transform: rotate(-7deg);
+
+    box-shadow: 3px 3px 0 #dca08f;
+
+}
+
+
+.logo h3 {
+
+    color: #795e4a;
+
+    font-size: 16px;
+
+    margin-bottom: 2px;
+
+}
+
+
+.logo small {
+
+    color: #a9754e;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+}
+
+
+.nav-links a {
+
+    color: #795e4a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.25s ease;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #ff684d;
+
+    transform:
+        translateY(-2px)
+        rotate(-2deg);
+
+}
+
+
+.nav-links a.active {
+
+    color: #ff684d;
+
+}
+
+
+/* =========================================================
+   NAV ACTIONS
+========================================================= */
+
+.nav-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+/* =========================================================
+   THEME BUTTON
+========================================================= */
+
+#themeBtn {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f0ebe2;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+
+}
+
+
+#themeBtn:hover {
+
+    transform:
+        rotate(20deg)
+        scale(1.08);
+
+}
+
+
+/* =========================================================
+   HAMBURGER BUTTON
+========================================================= */
+
+.menu-btn {
+
+    display: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: 2px solid #dfd1bf;
+
+    border-radius: 9px;
+
+    background: #bce8fa;
+
+    color: #795e4a;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: 3px 3px 0 #9ecbdc;
+
+    transition: 0.2s ease;
+
+}
+
+
+.menu-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.sso-hero {
+
+    min-height: 75vh;
+
+    padding:
+        150px 7%
+        90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background: #fffdf8;
+
+    background-image:
+
+        linear-gradient(
+            #eee8dc 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            #eee8dc 1px,
+            transparent 1px
+        );
+
+    background-size: 32px 32px;
+
+    overflow: hidden;
+
+}
+
+
+.sso-hero::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    left: 9%;
+
+    top: 35%;
+
+    color: #7fa36a;
+
+    font-size: 45px;
+
+    transform: rotate(-20deg);
+
+}
+
+
+.sso-hero::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 10%;
+
+    bottom: 18%;
+
+    color: #ff684d;
+
+    font-size: 55px;
+
+    transform: rotate(15deg);
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    max-width: 850px;
+
+    position: relative;
+
+    z-index: 2;
+
+    animation: fadeUp 0.8s ease;
+
+}
+
+
+.small-title {
+
+    color: #a9754e;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.sso-hero h1 {
+
+    color: #ff684d;
+
+    font-size: clamp(
+        60px,
+        9vw,
+        105px
+    );
+
+    line-height: 0.9;
+
+    font-weight: 900;
+
+    letter-spacing: -5px;
+
+    transform: rotate(-1deg);
+
+}
+
+
+.sso-hero h1 span {
+
+    display: block;
+
+    color: #7fa36a;
+
+    font-size: 0.65em;
+
+    letter-spacing: -2px;
+
+    margin-top: 15px;
+
+}
+
+
+.hero-text {
+
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    color: #795e4a;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.primary-btn {
+
+    display: inline-block;
+
+    padding: 14px 27px;
+
+    background: #ff684d;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    box-shadow: 5px 5px 0 #dca08f;
+
+    transition: 0.3s ease;
+
+}
+
+
+.primary-btn:hover {
+
+    transform:
+        translateY(-5px);
+
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.section {
+
+    width: 100%;
+
+    padding: 100px 8%;
+
+    background: #fffdf8;
+
+    position: relative;
+
+}
+
+
+.section::before,
+.role-section::before,
+.contact-section::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 30px;
+
+    right: 7%;
+
+    color: #ff684d;
+
+    font-size: 32px;
+
+    transform: rotate(15deg);
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.section-heading p {
+
+    color: #a9754e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.section-heading h2 {
+
+    color: #ff684d;
+
+    font-size: clamp(
+        40px,
+        5vw,
+        62px
+    );
+
+    line-height: 1;
+
+    font-weight: 900;
+
+}
+
+
+.section-heading h2 span {
+
+    color: #7fa36a;
+
+}
+
+
+.center {
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-grid {
+
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.profile-photo {
+
+    padding: 13px;
+
+    background: #fffdf8;
+
+    border: 2px solid #e5dacb;
+
+    box-shadow:
+        9px 9px 0 #dfd1bf;
+
+    transform: rotate(-2deg);
+
+    transition: 0.3s ease;
+
+}
+
+
+.profile-photo:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-6px);
+
+    box-shadow:
+        12px 12px 0 #d4c0a8;
+
+}
+
+
+.profile-photo img {
+
+    width: 100%;
+
+    height: 470px;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+.photo-label {
+
+    padding: 18px 10px 10px;
+
+    text-align: center;
+
+}
+
+
+.photo-label strong {
+
+    display: block;
+
+    color: #ff684d;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.photo-label span {
+
+    color: #a9754e;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PROFILE INFO
+========================================================= */
+
+.profile-info {
+
+    color: #795e4a;
+
+}
+
+
+.profile-tag {
+
+    color: #a9754e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.profile-info h3 {
+
+    color: #ff684d;
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.intro {
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   INFORMATION LIST
+========================================================= */
+
+.info-list {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+.info-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 18px;
+
+    background: #f7f2e9;
+
+    border: 1px solid #e5dacb;
+
+    border-radius: 8px;
+
+    box-shadow: 4px 4px 0 #dfd1bf;
+
+}
+
+
+.info-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #bce8fa;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+
+}
+
+
+.info-item small {
+
+    display: block;
+
+    color: #a9754e;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.info-item strong {
+
+    display: block;
+
+    color: #795e4a;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   ROLE SECTION
+========================================================= */
+
+.role-section {
+
+    padding: 100px 8%;
+
+    position: relative;
+
+    background: #dff2f7;
+
+    background-image:
+
+        linear-gradient(
+            #cce5e9 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            #cce5e9 1px,
+            transparent 1px
+        );
+
+    background-size: 32px 32px;
+
+}
+
+
+.role-grid {
+
+    max-width: 1100px;
+
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.role-card {
+
+    padding: 30px 24px;
+
+    background: #fffdf8;
+
+    border: 1px solid #e5dacb;
+
+    border-radius: 8px;
+
+    box-shadow: 7px 7px 0 #a8ccd5;
+
+    transition: 0.3s ease;
+
+}
+
+
+.role-card:nth-child(1) {
+
+    transform: rotate(-1.5deg);
+
+}
+
+
+.role-card:nth-child(2) {
+
+    transform: rotate(1.5deg);
+
+}
+
+
+.role-card:nth-child(3) {
+
+    transform: rotate(-2deg);
+
+}
+
+
+.role-card:nth-child(4) {
+
+    transform: rotate(1deg);
+
+}
+
+
+.role-card:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(0deg);
+
+}
+
+
+.role-number {
+
+    color: #7fa36a;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.role-card h3 {
+
+    color: #ff684d;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.role-card p {
+
+    color: #795e4a;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SUPPORT
+========================================================= */
+
+.support-section {
+
+    background: #fffdf8;
+
+}
+
+
+.support-grid {
+
+    max-width: 1050px;
+
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.support-card {
+
+    padding: 32px 24px;
+
+    text-align: center;
+
+    background: #f7f2e9;
+
+    border: 1px solid #e5dacb;
+
+    border-radius: 8px;
+
+    box-shadow: 6px 6px 0 #dfd1bf;
+
+    transition: 0.3s ease;
+
+}
+
+
+.support-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.support-card span {
+
+    display: block;
+
+    font-size: 40px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.support-card h3 {
+
+    color: #ff684d;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.support-card p {
+
+    color: #795e4a;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.message-section {
+
+    width: 100%;
+
+    padding: 100px 8%;
+
+    background: #7fa36a;
+
+    border-top: 8px solid #ff684d;
+
+    border-bottom: 8px solid #ff684d;
+
+    text-align: center;
+
+}
+
+
+.message-card {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.quote-mark {
+
+    display: block;
+
+    color: white;
+
+    font-size: 75px;
+
+    line-height: 0.5;
+
+}
+
+
+.message-card h2 {
+
+    color: white;
+
+    font-size: clamp(
+        32px,
+        5vw,
+        55px
+    );
+
+    margin: 25px 0;
+
+}
+
+
+.message-card p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #fffdf8;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+.quote-mark.bottom {
+
+    margin-top: 35px;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    padding: 100px 8%;
+
+    background: #fffdf8;
+
+    position: relative;
+
+}
+
+
+.contact-card {
+
+    max-width: 700px;
+
+    margin: 55px auto 0;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background: #f7f2e9;
+
+    border: 2px solid #e5dacb;
+
+    border-radius: 10px;
+
+    box-shadow: 8px 8px 0 #dfd1bf;
+
+    transform: rotate(-1deg);
+
+}
+
+
+.contact-photo {
+
+    width: 140px;
+
+    height: 140px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 6px solid #fffdf8;
+
+    box-shadow: 5px 5px 0 #dfd1bf;
+
+}
+
+
+.contact-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.contact-details h3 {
+
+    color: #ff684d;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-details p {
+
+    color: #7fa36a;
+
+    font-weight: bold;
+
+    margin-bottom: 22px;
+
+}
+
+
+.contact-btn {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #bce8fa;
+
+    color: #5f4b3a;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 7px;
+
+    box-shadow: 4px 4px 0 #9ecbdc;
+
+    transition: 0.3s ease;
+
+}
+
+
+.contact-btn:hover {
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    padding: 65px 20px;
+
+    text-align: center;
+
+    background: #795e4a;
+
+    color: #fffdf8;
+
+}
+
+
+.footer-logo {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ff684d;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    transform: rotate(-8deg);
+
+}
+
+
+footer h2 {
+
+    color: #fffdf8;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer p {
+
+    color: #eadfd1;
+
+}
+
+
+.footer-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    background: #ff684d;
+
+    margin: 22px auto;
+
+}
+
+
+footer small {
+
+    color: #d8cabc;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+
+        gap: 18px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 12px;
+
+    }
+
+
+    .role-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .support-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        width: 94%;
+
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-btn {
+
+        display: flex;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: calc(100% + 12px);
+
+        right: 0;
+
+        width: 190px;
+
+        padding: 10px;
+
+        background: #fffdf8;
+
+        border: 2px solid #dfd1bf;
+
+        border-radius: 10px;
+
+        box-shadow: 5px 5px 0 #d6c4ae;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        animation: menuDrop 0.2s ease;
+
+    }
+
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+
+    .nav-links a {
+
+        padding: 12px 14px;
+
+        border-bottom: 1px dashed #dfd1bf;
+
+    }
+
+
+    .nav-links a:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    .profile-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .profile-photo {
+
+        max-width: 550px;
+
+        margin: auto;
+
+    }
+
+
+    .profile-info {
+
+        text-align: center;
+
+    }
+
+
+    .info-list {
+
+        text-align: left;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        top: 10px;
+
+        width: 94%;
+
+        height: 60px;
+
+        padding: 8px 12px;
+
+    }
+
+
+    .logo {
+
+        gap: 7px;
+
+    }
+
+
+    .logo > span {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 12px;
+
+    }
+
+
+    .logo h3 {
+
+        font-size: 13px;
+
+    }
+
+
+    .logo small {
+
+        font-size: 8px;
+
+    }
+
+
+    #themeBtn {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 16px;
+
+    }
+
+
+    .menu-btn {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 20px;
+
+    }
+
+
+    /* HERO */
+
+    .sso-hero {
+
+        min-height: 90vh;
+
+        padding:
+            120px 6% 70px;
+
+    }
+
+
+    .small-title {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .sso-hero h1 {
+
+        font-size: 55px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .hero-text {
+
+        font-size: 15px;
+
+    }
+
+
+    /* SECTIONS */
+
+    .section,
+    .role-section,
+    .contact-section {
+
+        padding:
+            75px 6%;
+
+    }
+
+
+    .section-heading p {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    /* PROFILE */
+
+    .profile-grid {
+
+        margin-top: 40px;
+
+    }
+
+
+    .profile-photo img {
+
+        height: 380px;
+
+    }
+
+
+    .profile-info h3 {
+
+        font-size: 38px;
+
+    }
+
+
+    .intro {
+
+        font-size: 15px;
+
+    }
+
+
+    .info-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* ROLE */
+
+    .role-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    /* SUPPORT */
+
+    .support-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    /* MESSAGE */
+
+    .message-section {
+
+        padding:
+            80px 6%;
+
+    }
+
+
+    .message-card h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    /* CONTACT */
+
+    .contact-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .contact-photo {
+
+        width: 125px;
+
+        height: 125px;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .sso-hero h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .hero-text {
+
+        font-size: 14px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .profile-photo img {
+
+        height: 300px;
+
+    }
+
+
+    .profile-info h3 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+/* =========================================================
+   HAMBURGER MENU ANIMATION
+========================================================= */
+
+@keyframes menuDrop {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
