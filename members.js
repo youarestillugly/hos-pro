@@ -242,9 +242,9 @@ const members = [
         position: "Nill",
         image: "karmadema.jpeg",
         facts: [
-            "Fun fact 1.",
-            "Fun fact 2.",
-            "Fun fact 3."
+            "I like gays",
+            "I am talkative",
+            "Pro nap but anti bed time 🤧"
         ]
     },
 
